@@ -48,7 +48,7 @@ const HeroSection = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       nextSlide();
-    }, 7000);
+    }, 3000);
     return () => clearInterval(timer);
   }, [nextSlide]);
 
@@ -187,9 +187,9 @@ const HeroSection = () => {
             {/* Progress bar for current slide */}
             {index === currentSlide && (
               <div
-                className="absolute top-0 left-0 h-1 bg-secondary rounded-full animate-[progress_7s_linear]"
+                className="absolute top-0 left-0 h-1 bg-secondary rounded-full animate-[progress_3s_linear]"
                 style={{
-                  animation: 'progress 7s linear',
+                  animation: 'progress 3s linear',
                 }}
               />
             )}
